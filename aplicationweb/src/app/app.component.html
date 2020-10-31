@@ -1,0 +1,30 @@
+<h1>Activities Table</h1>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Descripiton</th>
+      <th scope="col">State</th>
+      <th scope="col">EstimateTime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let activ of activitiesItem" (click)="onClick(activ);">
+      <th scope="row">{{activ.id}}</th>
+      <td>{{activ.name}}</td>
+      <td>{{activ.description}}</td>
+      <td>{{activ.state}}</td>
+      <td>{{activ.estimateTime}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="selectActivity" class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Name: {{selectActivity.name}}</li>
+    <li class="list-group-item">Description: {{selectActivity.description}}</li>
+    <li class="list-group-item">State: {{selectActivity.state}}</li>
+  </ul>
+</div>
