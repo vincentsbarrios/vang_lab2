@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -92,8 +93,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.js",              
-              "./node_modules/bootstrap/dist/js/bootstrap.js" 
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           }
         },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "aplicationweb"
+    }
+  },
+  "defaultProject": "aplicationweb",
+  "cli": {
+    "analytics": "5f9576c4-2904-441b-b1a9-904362cb9781"
+  }
 }
